@@ -4,16 +4,17 @@ import {
   IoIosArrowBack,
   IoIosSettings,
 } from 'react-icons/io';
+import './Styles/Navigation.css';
 
 const Navigation = () => (
-  <nav className="nav-container">
-    <div className="navbar-container">
+  <nav className="nav main-color">
+    <div className="navbar">
       <NavLink to="/">
-        <IoIosArrowBack />
+        <IoIosArrowBack className="txtwhite" />
       </NavLink>
-      <span>Countries Iofo 2023</span>
+      <h1 className="txtwhite">Countries Info 2023</h1>
       <NavLink to="/country">
-        <IoIosSettings />
+        <IoIosSettings className="txtwhite" />
       </NavLink>
     </div>
   </nav>
