@@ -65,7 +65,7 @@ const HomePage = () => {
     return <div style={{ color: 'red' }}>There is an error...!</div>;
   }
   return (
-    <div className="home-container main-color">
+    <div className="home-container main-color" data-testid="home-test">
       <div className="world-map blue-color txtwhite">
         <div className="map">
           <img src={map} alt="World Map" />
