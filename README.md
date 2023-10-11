@@ -166,8 +166,8 @@ To run tests, run the following command:
 
 👤 **Aisha Alsewi**
 
-- GitHub: [@githubhandle](https://github.com/AlselwiAisha)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/aisha-alselwi-53a361270/)
+- GitHub: [Aisha Alsewi](https://github.com/AlselwiAisha)
+- LinkedIn: [Aisha Alsewi](https://www.linkedin.com/in/aisha-alselwi-53a361270/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
