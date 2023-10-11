@@ -11,16 +11,14 @@ const countries = [{
   commonName: 'Yemen',
   region: 'Asia',
   cca2: 'YE',
-  flag:'https://restcountries.eu/data/afg.png',
-  
+  flag: 'https://restcountries.eu/data/afg.png',
 
 }, {
   id: '2',
   commonName: 'Palestine',
   region: 'Asia',
   cca2: 'PS',
-  flag:'https://flagcdn.com/w320/ps.png',
-
+  flag: 'https://flagcdn.com/w320/ps.png',
 
 }];
 it('Check if Item component has changed', () => {
@@ -45,6 +43,6 @@ it('Check if the component container is there', async () => {
   );
   const container = await screen.findByTestId('countries-test');
   expect(container).toBeInTheDocument();
- expect(screen.getByText('Yemen / YE')).toBeInTheDocument();
+  expect(screen.getByText('Yemen / YE')).toBeInTheDocument();
   expect(screen.getByText('Palestine / PS')).toBeInTheDocument();
 });

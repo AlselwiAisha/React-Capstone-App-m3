@@ -1,4 +1,3 @@
-import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
@@ -17,4 +16,3 @@ it('Check if the component has changed', async () => {
   ).toJSON();
   expect(tree).toMatchSnapshot();
 });
-
