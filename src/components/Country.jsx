@@ -13,12 +13,13 @@ const Country = ({
   flag,
 }) => {
   const dispatch = useDispatch();
+
   return (
     <div className="country-card" key={id}>
       <div className="country-flag">
         <img src={flag.png} alt="Country Flag" />
       </div>
-      <div className="country-info">
+      <div className="country-info txtwhite">
         <h2 className="country-name">
           {commonName }
           {' / '}
@@ -33,7 +34,7 @@ const Country = ({
       </div>
       <div className="details-btn">
         <Link to={`/country/${cca2}`} onClick={() => dispatch(getCountry(commonName))}>
-          <HiOutlineArrowCircleRight />
+          <HiOutlineArrowCircleRight className="txtwhite" />
         </Link>
       </div>
     </div>

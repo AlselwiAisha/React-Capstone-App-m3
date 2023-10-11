@@ -1,3 +1,4 @@
+import './Styles/CountryDetails.css';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { HiOutlineArrowCircleRight } from 'react-icons/hi';
@@ -11,80 +12,91 @@ const CountryDetails = () => {
         <div className="country-map">
           <img src={countryDetails.flag} alt="Country Map" />
         </div>
-        <div className="headline">
+        <div className="country-headline">
           <h2>
-            {countryDetails.continent}
-            /
             {countryDetails.commonName}
-            {' '}
-            Details
+            {' / '}
+            {countryDetails.cca2}
+            <span>Details</span>
           </h2>
         </div>
         <div className="country-details">
           <div className="item">
             <h2>
               Common Name:
-              {countryDetails.commonName}
+              <span>
+                {' '}
+                {countryDetails.commonName}
+              </span>
             </h2>
-            <HiOutlineArrowCircleRight />
+            <HiOutlineArrowCircleRight className="txtwhite" />
           </div>
           <div className="item">
             <h2>
               Official Name:
-              {countryDetails.officialName}
+              <span>{countryDetails.officialName}</span>
             </h2>
-            <HiOutlineArrowCircleRight />
+            <HiOutlineArrowCircleRight className="txtwhite" />
           </div>
           <div className="item">
-            <h2>
-              Coat Of Arms:
-            </h2>
-            <img className="coatOfArms" src={countryDetails.coatOfArms} alt="Coat Of Arms" />
-            <HiOutlineArrowCircleRight />
+            <div className="coatOfArms">
+              <h2>
+                Coat Of Arms:
+              </h2>
+              {countryDetails.coatOfArms ? <img src={countryDetails.coatOfArms} alt="Coat Of Arms" /> : ''}
+            </div>
+            <HiOutlineArrowCircleRight className="txtwhite" />
           </div>
           <div className="item">
             <h2>
               Capital:
-              {countryDetails.capital}
+              <span>{countryDetails.capital}</span>
             </h2>
-            <HiOutlineArrowCircleRight />
+            <HiOutlineArrowCircleRight className="txtwhite" />
           </div>
           <div className="item">
             <h2>
               Language:
-              {countryDetails.language}
+              <span>{countryDetails.language}</span>
             </h2>
-            <HiOutlineArrowCircleRight />
+            <HiOutlineArrowCircleRight className="txtwhite" />
           </div>
           <div className="item">
             <h2>
               Time zone:
-              {countryDetails.timezone}
+              <span>{countryDetails.timezone}</span>
             </h2>
-            <HiOutlineArrowCircleRight />
+            <HiOutlineArrowCircleRight className="txtwhite" />
           </div>
           <div className="item">
             <h2>
               Currency:
-              {countryDetails.currency}
-              {' / '}
-              {countryDetails.currencySymbol}
+              <span>
+                {' '}
+                {countryDetails.currency}
+                {' / '}
+                {countryDetails.currencySymbol}
+              </span>
             </h2>
-            <HiOutlineArrowCircleRight />
+            <HiOutlineArrowCircleRight className="txtwhite" />
           </div>
           <div className="item">
             <h2>
               Area:
-              {countryDetails.area}
+              <span>
+                {countryDetails.area}
+                {' '}
+                sq km
+              </span>
             </h2>
-            <HiOutlineArrowCircleRight />
+            <HiOutlineArrowCircleRight className="txtwhite" />
           </div>
           <div className="item">
             <h2>
               Population:
-              {countryDetails.population}
+              <span>{countryDetails.population}</span>
             </h2>
-            <HiOutlineArrowCircleRight />
+            <HiOutlineArrowCircleRight className="txtwhite" />
           </div>
         </div>
       </div>
