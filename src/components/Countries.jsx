@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Country from './Country';
 
 const Countries = ({ countries }) => (
-  <div className="countries">
+  <div className="countries" data-testid="countries-test">
     {countries.map((country) => (
       <Country
         id={uuidv4()}
