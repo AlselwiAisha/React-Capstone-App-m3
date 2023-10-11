@@ -7,7 +7,7 @@ import {
 import './Styles/Navigation.css';
 
 const Navigation = () => (
-  <nav className="nav main-color">
+  <nav className="nav main-color" data-testid="nav-test">
     <div className="navbar">
       <NavLink to="/">
         <IoIosArrowBack className="icon txtwhite" />
