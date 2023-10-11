@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check if Item component has changed 1`] = `
+Array [
+  <div
+    className="country-card"
+    data-testid="country-test"
+  >
+    <div
+      className="country-flag"
+    >
+      <img
+        alt="Country Flag"
+      />
+    </div>
+    <div
+      className="country-info txtwhite"
+    >
+      <h2
+        className="country-name"
+      >
+        Yemen
+         / 
+        YE
+      </h2>
+      <div>
+        <p>
+          Continent:
+          Asia
+        </p>
+      </div>
+    </div>
+    <div
+      className="details-btn"
+    >
+      <a
+        href="/country/YE"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="txtwhite"
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="2"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>,
+  ",",
+]
+`;
