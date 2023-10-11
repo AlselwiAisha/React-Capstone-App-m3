@@ -12,7 +12,7 @@ export const getCountry = createAsyncThunk('country/getCountry',
       return error.message;
     }
   });
-
+const num = (number) => Intl.NumberFormat('en', { notation: 'compact' }).format(number);
 let countryState = {};
 export const countrySlice = createSlice({
   name: 'country',
@@ -47,11 +47,12 @@ export const countrySlice = createSlice({
               ? Object.values(country.currencies.XPF || '')[0] : '',
             currencySymbol: country.currencies
               ? Object.values(country.currencies.XPF || '')[1] : '',
-            area: country.area,
-            population: country.population,
+            area: num(country.area),
+            population: num(country.population),
             flag: country.flags.png,
             coatOfArms: country.coatOfArms
               ? country.coatOfArms.png : '',
+            cca2: country.cca2,
           },
         };
         return countryState;

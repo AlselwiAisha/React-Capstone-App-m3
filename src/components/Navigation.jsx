@@ -10,11 +10,11 @@ const Navigation = () => (
   <nav className="nav main-color">
     <div className="navbar">
       <NavLink to="/">
-        <IoIosArrowBack className="txtwhite" />
+        <IoIosArrowBack className="icon txtwhite" />
       </NavLink>
       <h1 className="txtwhite">Countries Info 2023</h1>
       <NavLink to="/country">
-        <IoIosSettings className="txtwhite" />
+        <IoIosSettings className="icon txtwhite" />
       </NavLink>
     </div>
   </nav>

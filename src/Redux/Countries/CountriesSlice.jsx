@@ -33,8 +33,6 @@ export const countriesSlice = createSlice({
           cca2: country.cca2,
           region: country.region,
           flag: country.flags,
-          coatOfArms: country.coatOfArms,
-          map: country.maps,
         }));
         countriesState = { ...state, isLoading: true, countries };
         return countriesState;

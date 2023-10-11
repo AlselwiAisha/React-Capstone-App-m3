@@ -3,7 +3,16 @@
 }
 .navbar{
     width: 100%;
-    padding: 2% 0.5% 2% 0.5%;
+    padding: 1% 0.5% 1% 0.5%;
     display: flex;
     justify-content: space-between;
+}
+
+.icon{
+    font-size: 2rem;
+}
+
+.navbar h1{
+    font-size: calc(20px + 1vmin);
+    font-family: var(--gill-sans);
 }
