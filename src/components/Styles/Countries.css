@@ -1,115 +1,114 @@
 .countries {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
 
-  .country-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: justify;
-    height: 100%;
-    width: 100%;
-    padding: 0.5rem;
+.country-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: justify;
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.country-flag {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+.country-flag img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  object-fit: cover;
+  align-self: flex-start;
+  justify-self: flex-start;
+  width: 80%;
+  height: 80%;
+}
+
+.country-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  word-wrap: break-word;
+  word-break: break-all;
+  gap: 0.2rem;
+  height: auto;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.country-name {
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+  text-align: justify;
+  word-break: keep-all;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.country-info p {
+  display: flex;
+  font-size: calc(10px + 1vmin);
+  font-weight: 300;
+  text-align: justify;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.details-btn {
+  position: absolute;
+  display: flex;
+  font-size: calc(20px + 2vmin);
+  font-weight: bold;
+  text-align: center;
+  top: 12%;
+  right: 13%;
+  transform: translate(50%, -50%);
+}
+
+.details-btn a {
+  display: flex;
+  color: var(--neutral);
+  text-decoration: none;
+}
+
+.details-btn a:hover {
+  color: var(--primary);
+}
+
+@media only screen and (max-width: 350px) {
+  .countries {
+    grid-template-columns: repeat(1, 1fr);
   }
-  
-  .country-flag {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 100%;
-    width: 100%;
-    padding: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .countries {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  .country-flag img {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    object-fit: cover;
-    align-self: flex-start;
-    justify-self: flex-start;
-    width: 80%;
-    height: 80%;
+}
+
+@media only screen and (min-width: 700px) {
+  .countries {
+    grid-template-columns: repeat(4, 1fr);
   }
-  
-  .country-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    word-wrap: break-word;
-    word-break: break-all;
-    gap: 0.2rem;
-    height: auto;
-    width: 100%;
-    padding: 0.5rem;
-  }
-  
-  .country-name {
-    display: flex;
-    font-size: calc(10px + 2vmin);
-    font-weight: bold;
-    text-align: justify;
-    word-break: keep-all;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .country-info p {
-    display: flex;
-    font-size: calc(10px + 1vmin);
-    font-weight: 300;
-    text-align: justify;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    opacity: 0.8;
-  }
-  
-  .details-btn {
-    position: absolute;
-    display: flex;
-    font-size: calc(20px + 2vmin);
-    font-weight: bold;
-    text-align: center;
-    top: 12%;
-    right: 13%;
-    transform: translate(50%, -50%);
-  }
-  
-  .details-btn a {
-    display: flex;
-    color: var(--neutral);
-    text-decoration: none;
-  }
-  
-  .details-btn a:hover {
-    color: var(--primary);
-  }
-  
-  @media only screen and (max-width: 350px) {
-    .countries {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-  
-  @media only screen and (min-width: 600px) {
-    .countries {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  @media only screen and (min-width: 700px) {
-    .countries {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-  
+}

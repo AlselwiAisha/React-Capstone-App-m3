@@ -6,28 +6,33 @@
   --sans-serif: sans-serif, verdana, tahoma;
   --gill-sans: "Gill Sans", sans-serif;
 }
-*{
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   font-family: var(--gill-sans);
 }
+
 .App {
   text-align: center;
 }
-.main-color{
-  background-color: #4369B2;
-}
-.txtwhite{
-  color: white;
-}
- 
-.main-dark-color{
-  background-color: #3F62A4;
+
+.main-color {
+  background-color: #4369b2;
 }
 
-.blue-color{
-  background-color: #558AE7;
+.txtwhite {
+  color: white;
+}
+
+.main-dark-color {
+  background-color: #3f62a4;
+}
+
+.blue-color {
+  background-color: #558ae7;
 }
