@@ -8,7 +8,7 @@ const CountryDetails = () => {
   const countryDetails = country;
   if (isLoading) {
     return (
-      <div className="details">
+      <div className="details" data-testid="details-test">
         <div className="country-map">
           <img src={countryDetails.flag} alt="Country Map" />
         </div>
