@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Countries from '../components/Countries';
-import store from '../redux/Store';
+import store from '../Redux/Store';
 import '@testing-library/jest-dom';
 
 const countries = [{
@@ -11,16 +11,14 @@ const countries = [{
   commonName: 'Yemen',
   region: 'Asia',
   cca2: 'YE',
-  flag:'https://restcountries.eu/data/afg.png',
-  
+  flag: 'https://restcountries.eu/data/afg.png',
 
 }, {
   id: '2',
   commonName: 'Palestine',
   region: 'Asia',
   cca2: 'PS',
-  flag:'https://flagcdn.com/w320/ps.png',
-
+  flag: 'https://flagcdn.com/w320/ps.png',
 
 }];
 it('Check if Item component has changed', () => {
@@ -45,6 +43,6 @@ it('Check if the component container is there', async () => {
   );
   const container = await screen.findByTestId('countries-test');
   expect(container).toBeInTheDocument();
- expect(screen.getByText('Yemen / YE')).toBeInTheDocument();
+  expect(screen.getByText('Yemen / YE')).toBeInTheDocument();
   expect(screen.getByText('Palestine / PS')).toBeInTheDocument();
 });

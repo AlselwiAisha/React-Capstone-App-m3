@@ -29,14 +29,14 @@ const CountryDetails = () => {
                 {countryDetails.commonName}
               </span>
             </h2>
-            <HiOutlineArrowCircleRight className="txtwhite" />
+            <HiOutlineArrowCircleRight className="icon1 txtwhite" />
           </div>
           <div className="item">
             <h2>
               Official Name:
               <span>{countryDetails.officialName}</span>
             </h2>
-            <HiOutlineArrowCircleRight className="txtwhite" />
+            <HiOutlineArrowCircleRight className="icon1 txtwhite" />
           </div>
           <div className="item">
             <div className="coatOfArms">
@@ -45,28 +45,28 @@ const CountryDetails = () => {
               </h2>
               {countryDetails.coatOfArms ? <img src={countryDetails.coatOfArms} alt="Coat Of Arms" /> : ''}
             </div>
-            <HiOutlineArrowCircleRight className="txtwhite" />
+            <HiOutlineArrowCircleRight className="icon1 txtwhite" />
           </div>
           <div className="item">
             <h2>
               Capital:
               <span>{countryDetails.capital}</span>
             </h2>
-            <HiOutlineArrowCircleRight className="txtwhite" />
+            <HiOutlineArrowCircleRight className="icon1 txtwhite" />
           </div>
           <div className="item">
             <h2>
               Language:
               <span>{countryDetails.language}</span>
             </h2>
-            <HiOutlineArrowCircleRight className="txtwhite" />
+            <HiOutlineArrowCircleRight className="icon1 txtwhite" />
           </div>
           <div className="item">
             <h2>
               Time zone:
               <span>{countryDetails.timezone}</span>
             </h2>
-            <HiOutlineArrowCircleRight className="txtwhite" />
+            <HiOutlineArrowCircleRight className="icon1 txtwhite" />
           </div>
           <div className="item">
             <h2>
@@ -78,7 +78,7 @@ const CountryDetails = () => {
                 {countryDetails.currencySymbol}
               </span>
             </h2>
-            <HiOutlineArrowCircleRight className="txtwhite" />
+            <HiOutlineArrowCircleRight className="icon1 txtwhite" />
           </div>
           <div className="item">
             <h2>
@@ -89,14 +89,14 @@ const CountryDetails = () => {
                 sq km
               </span>
             </h2>
-            <HiOutlineArrowCircleRight className="txtwhite" />
+            <HiOutlineArrowCircleRight className="icon1 txtwhite" />
           </div>
           <div className="item">
             <h2>
               Population:
               <span>{countryDetails.population}</span>
             </h2>
-            <HiOutlineArrowCircleRight className="txtwhite" />
+            <HiOutlineArrowCircleRight className="icon1 txtwhite" />
           </div>
         </div>
       </div>
