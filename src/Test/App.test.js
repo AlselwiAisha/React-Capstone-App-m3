@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import App from '../App';
-import store from '../redux/Store';
+import store from '../Redux/Store';
 import '@testing-library/jest-dom';
 
 it('Check if Item component has changed', () => {

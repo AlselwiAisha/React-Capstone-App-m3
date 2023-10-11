@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Countries from '../components/Countries';
-import store from '../redux/Store';
+import store from '../Redux/Store';
 import '@testing-library/jest-dom';
 
 const countries = [{
