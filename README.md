@@ -67,12 +67,6 @@
  ## 🚀 Live Demo <a name="live-demo"></a>
 - [Live Demo](https://countries-info-irzg.onrender.com)
 
-<!-- LIVE Video  -->
-
- ## 🚀Video Link <a name="live-demo"></a>
-- [Video Link](https://www.loom.com/share/bf52254d35ac4f24b0ed9c13328a16bb)
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p> 
 
 <!-- GETTING STARTED -->
