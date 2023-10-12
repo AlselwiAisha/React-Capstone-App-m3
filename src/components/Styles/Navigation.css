@@ -7,13 +7,15 @@
   padding: 1% 0.5% 1% 0.5%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .icon {
-  font-size: 2rem;
+  font-size: 1rem;
+  margin: 0.5rem;
 }
 
 .navbar h1 {
-  font-size: calc(20px + 1vmin);
-  font-family: var(--gill-sans);
+  font-size: calc(12px + 1vmin);
+  font-family: var(--lato);
 }

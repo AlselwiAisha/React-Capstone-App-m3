@@ -8,14 +8,14 @@ import { getCountry } from '../Redux/CountryDetails/CountryDetailsSlice';
 const Country = ({
   id,
   commonName,
-  region,
   cca2,
   flag,
+  population,
 }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="country-card" key={id} data-testid="country-test">
+    <article className="country-card" key={id} data-testid="country-test">
       <div className="country-flag">
         <img src={flag.png} alt="Country Flag" />
       </div>
@@ -25,28 +25,25 @@ const Country = ({
           {' / '}
           {cca2}
         </h2>
-        <div>
-          <p>
-            Continent:
-            {region}
-          </p>
-        </div>
+        <p>
+          {population}
+        </p>
       </div>
       <div className="details-btn">
         <Link to={`/country/${cca2}`} onClick={() => dispatch(getCountry(commonName))}>
           <HiOutlineArrowCircleRight className="txtwhite" />
         </Link>
       </div>
-    </div>
+    </article>
   );
 };
 
 Country.propTypes = {
   id: PropTypes.string.isRequired,
   commonName: PropTypes.string.isRequired,
-  region: PropTypes.string.isRequired,
   flag: PropTypes.string.isRequired,
   cca2: PropTypes.string.isRequired,
+  population: PropTypes.string.isRequired,
 };
 
 export default Country;

@@ -11,6 +11,18 @@ const CountryDetails = () => {
       <div className="details" data-testid="details-test">
         <div className="country-map">
           <img src={countryDetails.flag} alt="Country Map" />
+          <div className="country-info txtwhite">
+            <h2 className="country-name">
+              {countryDetails.commonName }
+              {' / '}
+              {countryDetails.cca2}
+            </h2>
+            <div>
+              <p>
+                {countryDetails.population}
+              </p>
+            </div>
+          </div>
         </div>
         <div className="country-headline">
           <h2>
@@ -20,85 +32,112 @@ const CountryDetails = () => {
             <span>Details</span>
           </h2>
         </div>
-        <div className="country-details">
-          <div className="item">
-            <h2>
-              Common Name:
-              <span>
-                {' '}
+        <ul className="country-details">
+          <li className="item">
+            <div className="txtItem">
+              <h2>
+                Common Name:
+              </h2>
+              <h2>
                 {countryDetails.commonName}
-              </span>
-            </h2>
+              </h2>
+            </div>
             <HiOutlineArrowCircleRight className="icon1 txtwhite" />
-          </div>
-          <div className="item">
-            <h2>
-              Official Name:
-              <span>{countryDetails.officialName}</span>
-            </h2>
+          </li>
+          <li className="item">
+            <div className="txtItem">
+              <h2>
+                Official Name:
+              </h2>
+              <h2>
+                {countryDetails.officialName}
+              </h2>
+            </div>
             <HiOutlineArrowCircleRight className="icon1 txtwhite" />
-          </div>
-          <div className="item">
-            <div className="coatOfArms">
+          </li>
+          <li className="item">
+            <div className="txtItem coatOfArms">
               <h2>
                 Coat Of Arms:
               </h2>
               {countryDetails.coatOfArms ? <img src={countryDetails.coatOfArms} alt="Coat Of Arms" /> : ''}
+
             </div>
             <HiOutlineArrowCircleRight className="icon1 txtwhite" />
-          </div>
-          <div className="item">
-            <h2>
-              Capital:
-              <span>{countryDetails.capital}</span>
-            </h2>
+          </li>
+          <li className="item">
+            <div className="txtItem">
+              <h2>
+                Capital:
+              </h2>
+              <h2>
+                {countryDetails.capital}
+              </h2>
+            </div>
             <HiOutlineArrowCircleRight className="icon1 txtwhite" />
-          </div>
-          <div className="item">
-            <h2>
-              Language:
-              <span>{countryDetails.language}</span>
-            </h2>
+          </li>
+          <li className="item">
+            <div className="txtItem">
+              <h2>
+                Language:
+              </h2>
+              <h2>
+                {countryDetails.language}
+              </h2>
+            </div>
             <HiOutlineArrowCircleRight className="icon1 txtwhite" />
-          </div>
-          <div className="item">
-            <h2>
-              Time zone:
-              <span>{countryDetails.timezone}</span>
-            </h2>
+          </li>
+          <li className="item">
+            <div className="txtItem">
+              <h2>
+                Time zone:
+              </h2>
+              <h2>
+                {countryDetails.timezone}
+              </h2>
+            </div>
             <HiOutlineArrowCircleRight className="icon1 txtwhite" />
-          </div>
-          <div className="item">
-            <h2>
-              Currency:
-              <span>
-                {' '}
+          </li>
+          <li className="item">
+            <div className="txtItem">
+              <h2>
+                Currency:
+              </h2>
+              <h2>
                 {countryDetails.currency}
                 {' / '}
                 {countryDetails.currencySymbol}
-              </span>
-            </h2>
+              </h2>
+            </div>
             <HiOutlineArrowCircleRight className="icon1 txtwhite" />
-          </div>
-          <div className="item">
-            <h2>
-              Area:
-              <span>
+          </li>
+          <li className="item">
+            <div className="txtItem">
+              <h2>
+                Area:
+              </h2>
+              <h2>
+                {' '}
                 {countryDetails.area}
                 {' '}
                 sq km
-              </span>
-            </h2>
+              </h2>
+            </div>
             <HiOutlineArrowCircleRight className="icon1 txtwhite" />
-          </div>
-          <div className="item">
-            <h2>
-              Population:
-              <span>{countryDetails.population}</span>
-            </h2>
+          </li>
+          <li className="item">
+            <div className="txtItem">
+              <h2>
+                Population:
+              </h2>
+              <h2>
+                {' '}
+                {countryDetails.population}
+              </h2>
+            </div>
             <HiOutlineArrowCircleRight className="icon1 txtwhite" />
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     );
   }

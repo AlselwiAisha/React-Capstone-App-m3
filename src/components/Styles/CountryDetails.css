@@ -12,11 +12,11 @@
 
 .country-map {
   position: relative;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 35vh;
   width: 100%;
   padding: 1rem;
   background-color: #558ae7;
@@ -44,7 +44,7 @@
 }
 
 .country-headline h2 {
-  font-size: calc(10px + 1.5vmin);
+  font-size: calc(10px + 1vmin);
   font-weight: bold;
   text-align: center;
   padding: 0;
@@ -65,10 +65,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  height: 5vh;
+  height: 8.5vh;
   width: 100%;
-  padding: 2rem;
+  padding: 0.8rem;
+  list-style: none;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .item h2 {
@@ -80,7 +82,6 @@
   margin: 0;
 }
 
-.item span,
 .country-headline span {
   margin-left: 0.5rem;
 }
@@ -89,8 +90,14 @@
   background-color: #3f62a4;
 }
 
+.txtItem {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .icon1 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 .coatOfArms {
@@ -108,5 +115,16 @@
 @media only screen and (min-width: 700px) {
   .item {
     width: 70%;
+  }
+
+  .country-map {
+    display: flex;
+    justify-items: end;
+    align-items: flex-start;
+  }
+
+  .country-map img {
+    width: 70%;
+    height: 70%;
   }
 }

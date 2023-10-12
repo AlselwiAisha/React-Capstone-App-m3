@@ -42,21 +42,22 @@
 .country-info {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: flex-end;
   word-wrap: break-word;
   word-break: break-all;
   gap: 0.2rem;
   height: auto;
   width: 100%;
   padding: 0.5rem;
+  margin-right: 2rem;
 }
 
 .country-name {
   display: flex;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1.2vmin);
   font-weight: bold;
-  text-align: justify;
+  justify-content: flex-end;
+  align-items: flex-end;
   word-break: keep-all;
   width: 100%;
   padding: 0;
@@ -65,9 +66,10 @@
 
 .country-info p {
   display: flex;
-  font-size: calc(10px + 1vmin);
+  font-size: calc(10px + 1.2vmin);
   font-weight: 300;
-  text-align: justify;
+  justify-content: flex-end;
+  align-items: flex-end;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -87,12 +89,17 @@
 
 .details-btn a {
   display: flex;
-  color: var(--neutral);
+  color: white;
   text-decoration: none;
 }
 
 .details-btn a:hover {
-  color: var(--primary);
+  color: #4063a7;
+}
+
+.country-card:nth-child(4n - 6),
+.country-card:nth-child(4n - 5) {
+  background-color: #4063a7;
 }
 
 @media only screen and (max-width: 350px) {
@@ -110,5 +117,23 @@
 @media only screen and (min-width: 700px) {
   .countries {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .country-card:nth-child(4n +2),
+  .country-card:nth-child(4n +3) {
+    background-color: #4063a7;
+  }
+
+  .country-card:nth-child(4n +1),
+  .country-card:nth-child(4n +4) {
+    background-color: #3f62a4;
+  }
+
+  .country-info {
+    align-items: flex-start;
+  }
+
+  .country-name {
+    width: auto;
   }
 }
