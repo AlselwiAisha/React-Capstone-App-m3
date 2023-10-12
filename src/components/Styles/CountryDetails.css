@@ -1,0 +1,130 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: var(--lato);
+  min-height: 100vh;
+  width: 100%;
+  background-color: #4369b2;
+  color: white;
+}
+
+.country-map {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  width: 100%;
+  padding: 1rem;
+  background-color: #558ae7;
+}
+
+.country-map img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0;
+}
+
+.country-headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  gap: 0.5rem;
+  height: 5vh;
+  width: 100%;
+  padding: 0.2rem 1rem;
+  background-color: #3f62a4;
+}
+
+.country-headline h2 {
+  font-size: calc(10px + 1vmin);
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.country-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 8.5vh;
+  width: 100%;
+  padding: 0.8rem;
+  list-style: none;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.item h2 {
+  display: flex;
+  font-size: calc(12px + 1vmin);
+  font-weight: bold;
+  text-align: justify;
+  padding: 0;
+  margin: 0;
+}
+
+.country-headline span {
+  margin-left: 0.5rem;
+}
+
+.item:nth-child(even) {
+  background-color: #3f62a4;
+}
+
+.txtItem {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon1 {
+  font-size: 1.3rem;
+}
+
+.coatOfArms {
+  display: flex;
+  align-items: center;
+}
+
+.coatOfArms img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  margin-left: 0.5rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .item {
+    width: 70%;
+  }
+
+  .country-map {
+    display: flex;
+    justify-items: end;
+    align-items: flex-start;
+  }
+
+  .country-map img {
+    width: 70%;
+    height: 70%;
+  }
+}

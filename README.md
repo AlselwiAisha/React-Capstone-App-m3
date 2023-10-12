@@ -1,10 +1,113 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<a name="readme-top"></a>
 
-In the project directory, you can run:
+
+# 📗 Table of Contents
+
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[React capstone project\] ](#-react-capstone-project-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [🚀Video Link ](#video-link-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [`npm start`](#npm-start)
+    - [`npm test`](#npm-test)
+    - [`npm run build`](#npm-run-build)
+    - [`npm run eject`](#npm-run-eject)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
+
+# 📖 [React capstone project] <a name="about-project"></a>
+
+**"React capstone project"** This React capstone project is about building a mobile web application to check a list of Countries use React and Redux.
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li>JSX</li>
+    <li>React Components</li>
+    <li>React Router V6</li>
+    <li>CSS</li>
+    <li>Redux Toolkit</li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **Built with React JS**
+- **Single page app**
+- **Redux store with reducers**
+- **Neat folder structure**
+- **Redux toolkit for state management**
+- **Neat user interface**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+ ## 🚀 Live Demo <a name="live-demo"></a>
+- [Live Demo](https://countries-info-irzg.onrender.com)
+
+<!-- LIVE Video  -->
+
+ ## 🚀Video Link <a name="live-demo"></a>
+- [Video Link](https://www.loom.com/share/bf52254d35ac4f24b0ed9c13328a16bb)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p> 
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+- Open your Terminal
+- Navigate to the desired directory to which you want to clone the repository to
+- [Copy & Paste] git clone https://github.com/AlselwiAisha/React-Capstone-App-m3.git
+
+### Prerequisites
+
+In order to run this project you need:
+
+- Basic understanding of Github
+- Basic understanding of run project by npm
+- Your machine should have Chrome or any of your favorite browsers and VSCode installed
+
+### Setup
+
+Clone this repository to your desired folder:
+
+- git clone https://github.com/AlselwiAisha/React-Capstone-App-m3.git
+
+### Install
+
+Install this project with:
+
+```sh
+npm install
+```
+
+### Usage
+
+To run the project, execute the following command:
 
 ### `npm start`
 
@@ -39,32 +142,74 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Run tests
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To run tests, run the following command:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+  npx stylelint "**/*.{css,scss}"
+```
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```sh
+  npx npx eslint "**/*.{js,jsx}"
+```
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- You can deploy it using: [Render](https://render.com/)
 
-### `npm run build` fails to minify
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Aisha Alsewi**
+
+- GitHub: [Aisha Alsewi](https://github.com/AlselwiAisha)
+- LinkedIn: [Aisha Alsewi](https://www.linkedin.com/in/aisha-alselwi-53a361270/)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- **Add pagination**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/AlselwiAisha/React-Capstone-App-m3/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+Give a ⭐️ if you like this project! It's help a lot
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+- I'd like to acknowledge the microvere staff for all of their wonderful support and network.
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio?log_shim_removal=1).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./MIT.md) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
